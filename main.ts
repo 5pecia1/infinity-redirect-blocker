@@ -1,5 +1,8 @@
-import { decode } from "https://deno.land/std@0.140.0/encoding/base64.ts";
-import { Application, Router } from "https://deno.land/x/oak/mod.ts";
+import {
+    decode,
+    Application,
+    Router,
+} from "./deps.ts";
 
 const router = new Router();
 router.get("/decode/:url", async (ctx) => {
