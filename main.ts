@@ -5,8 +5,9 @@ import {
 } from "./deps.ts";
 
 const router = new Router();
-router.get("/decode/:url", async (ctx) => {
-    const url = new TextDecoder().decode(decode(ctx.params.url));
+router.get("/decode/:url*", async (ctx) => {
+    const url = new TextDecoder().decode(decode(ctx.params.url ?? ""));
+    console.log('u', url);
 
     let resp = await fetch(url, {
         redirect: "manual",
