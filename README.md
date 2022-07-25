@@ -10,7 +10,7 @@ Server returned HTTP Error 307: The HTTP server returned a redirect error that w
 ## Feature
 
 - [x] Block infinite redirects by **Cookies**
-- [ ] Block infinite redirects by **CloundFront**
+- [ ] Block infinite redirects by **CloudFront**
 
 ## Requirements
 
