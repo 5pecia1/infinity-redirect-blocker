@@ -9,7 +9,6 @@ Infinite redirects example by [W3C RSS check service](https://validator.w3.org/f
 ## Feature
 
 - [x] Block infinite redirects by **Cookies**
-- [ ] Block infinite redirects by **CloudFront**
 
 ## Requirements
 
