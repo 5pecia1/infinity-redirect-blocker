@@ -30,4 +30,4 @@ make docker.build
 
 ## Use
 
-* access `http://localhost:8080/decode/<base64 decoded URL>`
+* access `http://localhost:8080/decode/<base64 encoded URL>`
