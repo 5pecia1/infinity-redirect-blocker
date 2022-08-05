@@ -17,7 +17,7 @@ router.get("/decode/:url*", async (ctx) => {
 
     resp = await fetch(url, {
         headers: {
-            "Cookie": cookie ?? "",
+            "Cookie": cookie?.split(";")[0] ?? "",
         },
     });
 
