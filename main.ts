@@ -14,9 +14,8 @@ router.get("/decode/:url*", async (ctx) => {
     });
 
     const cookie = resp.headers.get("set-cookie");
-    const location = resp.headers.get("location");
 
-    resp = await fetch(location ?? url, {
+    resp = await fetch(url, {
         headers: {
             "Cookie": cookie ?? "",
         },
